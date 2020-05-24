@@ -24,3 +24,17 @@ doAsync(asyncMock);
 // const doStream = require("./src/do-stream");
 
 // console.log(doStream);
+
+/**
+ * 3.Resource Pooling
+ * Create a class ResourceManager which accepts an integer count as input.
+ * ResourceManager should manage a limited number of resource objects.
+ * The maximum number of resource objects that can be created is determined by count.
+ * ResourceManager should implement a function borrow which accepts a callback as parameter.
+ * The borrow function should reserve a resource object and pass it to the caller through the callback.
+ * A resource object can never be acquired by other borrowers until the release function in
+ * the resource object is called.
+ */
+const doPooling = require("./src/do-pooling");
+
+doPooling();
